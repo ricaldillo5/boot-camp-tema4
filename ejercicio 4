@@ -1,0 +1,77 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+       
+       //primera parte
+       
+       int numero = -1;
+       
+       if (numero > 0) {
+           System.out.println("la variable numero es positiva");
+       } 
+        if (numero == 0) {
+            System.out.println("la variable numero es igual a cero");
+        }
+        if (numero < 0) {
+            System.out.println("la variable numero es negativa");
+        }
+       
+       //Bucle while
+       System.out.println("Inicializacion del bucle While");
+       int numerowhile = 0;
+       while (numerowhile <= 2){
+           numerowhile++;
+           System.out.println(numerowhile);
+       }
+       
+        //BUCLE DO WHILE
+        
+        int numerodowhile = 2;
+        System.out.println("Inicializacion del bucle do While");
+        do {
+            numerodowhile++;
+            System.out.println(numerodowhile);
+        } while (numerodowhile == 2);
+        
+        //BUCLE FOR
+        
+        System.out.println("Inicializacion del bucle for");
+        
+        for (int numerofor = 0; numerofor <= 3; numerofor++){
+            System.out.println(numerofor);
+        }
+        
+        //Swith case
+        
+        String estacion = "invierno";
+        
+        switch (estacion){
+            
+            case "invierno":
+                
+                System.out.println("estamos en " + estacion);
+                break;
+            
+            case "otoño":
+                
+                System.out.println("estamos en " + estacion);
+                break;
+                
+            case "verano":
+                
+                System.out.println("estamos en " + estacion);
+                break;
+                
+            case "primavera":
+                
+                System.out.println("estamos en " + estacion);
+                break;
+                
+            default:
+                System.out.println("no existe esta estacion del año ");
+                break;
+        }
+            
+    }
+}
